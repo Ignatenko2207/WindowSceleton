@@ -54,7 +54,14 @@ public class MainWindow extends JFrame{
 	}
 	
 	private String reverseText(String text) {
-		// TODO Auto-generated method stub
-		return null;
+		if( text.contains(" ")) {
+			String[] words = text.split(" ");
+			String reversedNames = "";
+			for(int i = (words.length-1); i>=0; i--) {
+				reversedNames += words[i];
+			}
+			return reversedNames;
+		}
+		return text;
 	}
 }
