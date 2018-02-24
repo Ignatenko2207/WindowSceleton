@@ -58,9 +58,9 @@ public class MainWindow extends JFrame{
 			String[] words = text.split(" ");
 			String reversedNames = "";
 			for(int i = (words.length-1); i>=0; i--) {
-				reversedNames += words[i];
+				reversedNames += words[i] + " ";
 			}
-			return reversedNames;
+			return reversedNames.trim();
 		}
 		return text;
 	}
